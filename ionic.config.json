@@ -1,0 +1,7 @@
+{
+  "name": "kmpas_angular",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
