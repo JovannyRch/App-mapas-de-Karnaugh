@@ -1,0 +1,59 @@
+<ion-content color="light">
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="goResult()">
+      <ion-icon name="play"></ion-icon>
+    </ion-fab-button>
+
+  </ion-fab>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="3"></ion-col>
+      <ion-col size="3">
+        <ion-button (click)="changeDefault(0)" expand="full" fill="solid" shape="round">
+          0s
+        </ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button (click)="changeDefault(1)" expand="full" fill="solid" shape="round">
+          1s
+        </ion-button>
+      </ion-col>
+      <ion-col size="3"></ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div style="padding: 30px;margin-bottom: 100px;">
+    <table>
+      <thead>
+        <th>m</th>
+        <th *ngFor="let r of buildArray(numberVar)">
+          {{ variables[r] }}
+        </th>
+        <th>0</th>
+        <th>1</th>
+        <th>X</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let r of tabla">
+          <td>
+            {{ r.m }}
+          </td>
+          <td *ngFor="let c of r.bin">
+            {{ c }}
+          </td>
+          <td (click)="r.val = 0">
+            <input type="radio" [checked]="r.val == 0" [name]="'value'+r.m" val="0">
+          </td>
+          <td (click)="r.val = 1">
+            <input type="radio" [checked]="r.val == 1" [name]="'value'+r.m" val="1">
+          </td>
+          <td (click)="r.val = 3">
+            <input type="radio" [checked]="r.val == 3" [name]="'value'+r.m" val="2">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</ion-content>

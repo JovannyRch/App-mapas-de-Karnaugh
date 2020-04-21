@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "kmpas_angular",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}
