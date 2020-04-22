@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "kmpas_angular",
+  "appId": "com.jovannyrch.kmaps",
+  "appName": "Mapas de Karnaugh",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",

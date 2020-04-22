@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package com.jovannyrch.kmaps;
 
 import android.os.Bundle;
 
