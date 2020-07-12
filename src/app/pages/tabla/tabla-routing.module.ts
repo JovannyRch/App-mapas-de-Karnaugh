@@ -6,7 +6,23 @@ import { TablaPage } from './tabla.page';
 const routes: Routes = [
   {
     path: '',
-    component: TablaPage
+    component: TablaPage,
+    children: [
+      {
+        path: 'grid',
+        loadChildren: () => import('../grid/grid.module').then(m => m.GridPageModule)
+      },
+      {
+        path: 'truthtable',
+        loadChildren: () => import('../truthtable/truthtable.module').then(m => m.TruthtablePageModule)
+      },
+    ],
+
+  },
+  {
+    path: '',
+    redirectTo: '/app/pages/tabla/grid',
+    pathMatch: 'full'
   }
 ];
 
@@ -14,4 +30,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class TablaPageRoutingModule {}
+export class TablaPageRoutingModule { }

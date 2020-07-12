@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cuadrícula</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="goResult()">
+      <ion-icon name="play"></ion-icon>
+    </ion-fab-button>
+
+  </ion-fab>
+
+  <table *ngIf="vars == 2" style="background-color: white;">
+    <tr>
+      <td class="no-border"></td>
+      <td class="no-border">0</td>
+      <td class="no-border">1</td>
+    </tr>
+    <tr>
+      <td class="no-border">0</td>
+      <td>
+        <grid-item [value]="value(grid[0][0]></grid-item>
+      </td>
+      <td>
+        <grid-item [value]=" value(grid[0][1])"></grid-item>
+      </td>
+    </tr>
+    <tr>
+      <td class="no-border">1</td>
+      <td>
+        <grid-item [value]="value(grid[1][0])"></grid-item>
+      </td>
+
+      <td>
+        <grid-item [value]="value(grid[1][1])"></grid-item>
+      </td>
+    </tr>
+
+  </table>
+</ion-content>

@@ -1,4 +1,18 @@
-<ion-content color="light">
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button [tab]="'grid?n='+numberVar">
+      <ion-icon name="grid-outline"></ion-icon>
+      <ion-label>Cuadricula</ion-label>
+    </ion-tab-button>
+    <ion-tab-button [tab]="'truthtable?n='+numberVar">
+      <ion-icon name="list-outline"></ion-icon>
+      <ion-label>Tabla de verdad</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+<!-- 
+
+  <ion-content color="light">
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button (click)="goResult()">
@@ -57,3 +71,5 @@
   </div>
 
 </ion-content>
+
+ -->

@@ -17,7 +17,7 @@ export class HomePage {
     let navigationExtras: NavigationExtras = {
       queryParams: { n: n }
     };
-    this.router.navigate(['tabla'], navigationExtras);
+    this.router.navigate(['tabla/grid'], navigationExtras);
   }
 
 

@@ -1,0 +1,22 @@
+.no-border{
+    border: none;
+    background-color: transparent;
+    
+}       
+tr{
+    background-color: white;
+}
+
+
+table tr:nth-child(even) {
+    background-color: white !important;
+}
+
+.azul{
+    background-color: #5371ff;
+    color: white;
+}
+
+tr{
+    margin: 2px;
+}

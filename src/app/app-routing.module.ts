@@ -12,6 +12,14 @@ const routes: Routes = [
     path: 'result',
     loadChildren: () => import('./pages/result/result.module').then( m => m.ResultPageModule)
   },
+  {
+    path: 'grid',
+    loadChildren: () => import('./pages/grid/grid.module').then( m => m.GridPageModule)
+  },
+  {
+    path: 'truthtable',
+    loadChildren: () => import('./pages/truthtable/truthtable.module').then( m => m.TruthtablePageModule)
+  },
 ];
 
 @NgModule({

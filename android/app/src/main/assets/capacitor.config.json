@@ -4,5 +4,10 @@
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
-  "cordova": {}
+  "cordova": {},
+  "version": "2",
+  "server": {
+    "url": "http://localhost:8100",
+    "cleartext": true
+  }
 }
